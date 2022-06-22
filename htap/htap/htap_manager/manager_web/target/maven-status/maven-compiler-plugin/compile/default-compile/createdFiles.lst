@@ -1,0 +1,9 @@
+com\group2\controller\CompanyController.class
+com\group2\controller\HostController.class
+com\group2\controller\HostPowerController.class
+com\group2\controller\MarriedPersonController.class
+com\group2\controller\RoleController.class
+com\group2\controller\MenuController.class
+com\group2\controller\HostOrderController.class
+com\group2\controller\AdminController.class
+com\group2\controller\PlannerController.class

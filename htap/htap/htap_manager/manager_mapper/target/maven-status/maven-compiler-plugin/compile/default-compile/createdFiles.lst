@@ -1,0 +1,10 @@
+com\group2\mapper\AdminMapper.class
+com\group2\mapper\RoleMenuMapper.class
+com\group2\mapper\HostMapper.class
+com\group2\mapper\MenuMapper.class
+com\group2\mapper\CompanyMapper.class
+com\group2\mapper\HostPowerMapper.class
+com\group2\mapper\RoleMapper.class
+com\group2\mapper\HostOrderMapper.class
+com\group2\mapper\MarriedPersonMapper.class
+com\group2\mapper\PlannerMapper.class

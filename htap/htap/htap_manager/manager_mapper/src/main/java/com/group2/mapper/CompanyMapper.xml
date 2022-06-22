@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.group2.mapper.CompanyMapper">
+
+    <select id="getCompanyByCondition" resultType="com.group2.pojo.Company">
+        select * from t_company
+        <where>
+
+            <if test="cname != null and cname != ''">
+                cname like concat('%',#{cname},'%')
+            </if>
+            <if test="status != null and status != ''">
+                and status=#{status}
+            </if>
+        </where>
+
+        <if test="cnumOrder != null and cnumOrder != ''">
+            order by cnum ${cnumOrder}
+        </if>
+    </select>
+</mapper>

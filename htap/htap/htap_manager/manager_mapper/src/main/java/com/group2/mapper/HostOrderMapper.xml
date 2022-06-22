@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.group2.mapper.HostOrderMapper">
+
+    <select id="getHostOrderByOidAndHid" resultType="com.group2.pojo.HostOrder">
+        select * from t_host_order
+        <where>
+            <if test="oid != null and oid != ''">
+                oid like concat('%',#{oid},'%')
+            </if>
+
+            <if test="hid != null and hid != ''">
+                and hid like concat('%',#{hid},'%')
+            </if>
+        </where>
+    </select>
+</mapper>

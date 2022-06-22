@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>htap_parent</artifactId>
+        <groupId>com.group2</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>htap_manager</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>manager_pojo</module>
+        <module>manager_mapper</module>
+        <module>manager_service</module>
+        <module>manager_web</module>
+    </modules>
+
+
+</project>
